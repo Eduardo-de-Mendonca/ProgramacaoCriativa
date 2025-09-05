@@ -8,6 +8,7 @@ const mySketch = (p) => {
 
   p.draw = () => {
     p.background(200);
+    p.fill('orange');
     p.ellipse(200, 200, 50, 50);
   };
 };
