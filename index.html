@@ -1,0 +1,65 @@
+<!-- Programa de IA para listar os diferentes artefatos semanais -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Creative Programming Weekly Projects</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 2rem;
+      background: #f5f5f5;
+    }
+    h1 {
+      text-align: center;
+    }
+    ul {
+      list-style: none;
+      padding: 0;
+      max-width: 400px;
+      margin: auto;
+    }
+    li {
+      margin: 0.5rem 0;
+    }
+    a {
+      display: block;
+      padding: 0.5rem 1rem;
+      background: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    a:hover {
+      background: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Weekly Creative Programming Sketches</h1>
+  <ul id="project-list"></ul>
+
+  <script>
+    // Add your weekly folders here:
+    const weeklyFolders = [
+      "Semana09_08"
+      // Add more as you go
+    ];
+
+    const listContainer = document.getElementById("project-list");
+
+    weeklyFolders.forEach(folder => {
+      const li = document.createElement("li");
+      const a = document.createElement("a");
+      a.href = folder + "/"; // Points to index.html in that folder
+      a.textContent = folder;
+      li.appendChild(a);
+      listContainer.appendChild(li);
+    });
+  </script>
+
+</body>
+</html>
