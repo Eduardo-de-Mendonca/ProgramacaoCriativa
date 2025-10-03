@@ -1,31 +1,16 @@
-/*
-import p5 from "p5";
-
-const sketch = (p: p5) => {
-  p.setup = () => {
-    console.log("Hello, world from p5 Instance Mode + TS!");
-  };
-
-  p.draw = () => {
-    // nothing for now
-  };
-};
-
-new p5(sketch);
-*/
 
 import p5 from "p5";
+// Turn off p5’s error-friendly parser (avoids console spam on GitHub Pages)
+(p5 as any).disableFriendlyErrors = true;
 
-let w: number;
-let h: number;
 let line_proportion = 0.1;
 let iterations = 32;
 
 const sketch = (p: p5) => {
   p.setup = () => {
     p.createCanvas(p.windowWidth, p.windowHeight);
-    w = p.width;
-    h = p.height;
+    let w = p.width;
+    let h = p.height;
 
     p.background("white");
 
@@ -40,7 +25,7 @@ const sketch = (p: p5) => {
     let x1 = x;
     let x2 = x;
     let y1 = 0;
-    let y2 = h;
+    let y2 = p.height;
 
     p.line(x1, y1, x2, y2);
   };
