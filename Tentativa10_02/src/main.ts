@@ -1,5 +1,7 @@
 
 import p5 from "p5";
+import { vertical_infinite_line } from "./utilities";
+
 // Turn off p5’s error-friendly parser (avoids console spam on GitHub Pages)
 (p5 as any).disableFriendlyErrors = true;
 
@@ -19,15 +21,6 @@ const sketch = (p: p5) => {
       vertical_infinite_line(p, x);
       x = p.map(line_proportion, 0, 1, x, w);
     }
-  };
-
-  const vertical_infinite_line = (p: p5, x: number) => {
-    let x1 = x;
-    let x2 = x;
-    let y1 = 0;
-    let y2 = p.height;
-
-    p.line(x1, y1, x2, y2);
   };
 };
 
