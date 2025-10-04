@@ -21,6 +21,8 @@ const sketch = (p: p5) => {
       ut.vertical_infinite_line(p, x);
       x = p.map(line_proportion, 0, 1, x, w);
     }
+
+    console.log("Hello, console!");
   };
 };
 
