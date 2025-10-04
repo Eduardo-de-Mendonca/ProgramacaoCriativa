@@ -1,6 +1,6 @@
 
 import p5 from "p5";
-import * as ut from "./utilities";
+import * as ut from "../../utilities";
 
 // Turn off p5’s error-friendly parser (avoids console spam on GitHub Pages)
 (p5 as any).disableFriendlyErrors = true;

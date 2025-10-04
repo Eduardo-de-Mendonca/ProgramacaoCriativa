@@ -9,5 +9,5 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["Artefato*/src"]
+  "include": ["Artefato*/src", "utilities.ts"]
 }
