@@ -1,6 +1,7 @@
 
 import p5 from "p5";
-import * as ut from "../../utilities";
+import * as ut from ".././utilities";
+// Acesse o módulo utilities.ts em https://github.com/Eduardo-de-Mendonca/ProgramacaoCriativa/blob/fad5bcf35464dce85d416871d6f8d14c3cc39bff/utilities.ts
 
 // Turn off p5’s error-friendly parser (avoids console spam on GitHub Pages)
 (p5 as any).disableFriendlyErrors = true;
