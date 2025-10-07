@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    //"target": "ESNext",
+    //"useDefineForClassFields": true,
+    //"module": "ESNext",
+    //"moduleResolution": "Node",
+    //"strict": true,
+    "esModuleInterop": true,
+    "lib": ["ES2015", "dom"],
+    //"skipLibCheck": true,
+    //"forceConsistentCasingInFileNames": true,
+    "types": ["vite/client"]
+  },
+  //"include": ["src", "utilities.ts"]
+}
