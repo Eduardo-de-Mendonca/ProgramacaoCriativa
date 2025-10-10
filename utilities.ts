@@ -42,7 +42,7 @@ export function vertical_infinite_line(p: p5, x: number) {
 };
 
 /**
-// Desenha texto com as coordenadas do top left e o tamanho da fonte
+Desenha texto com as coordenadas do top left e o tamanho da fonte
 */
 export function draw_text(p:p5, drawee:string, x:number, y:number, text_color:p5.Color, f_size:number, h_align: any = p.CENTER, v_align: any = p.CENTER) {
     p.push();
@@ -51,4 +51,29 @@ export function draw_text(p:p5, drawee:string, x:number, y:number, text_color:p5
     p.fill(text_color);
     p.text(drawee, x, y);
     p.pop();
+}
+
+/**
+Desenha um retângulo com as coordenadas do centro e a cor
+*/
+export function centered_rect_no_stroke(p:p5, center_x: number, center_y: number, width: number, height: number, color: p5.Color) {
+    p.push();
+
+    let x = center_x - width/2;
+    let y = center_y - height/2;
+    let w = width;
+    let h = height;
+
+    p.fill(color);
+    p.noStroke();
+    p.rect(x, y, w, h);
+
+    p.pop();
+}
+
+/**
+Retorna um random de -x a x
+*/
+export function random_around_zero(p: p5, x: number) {
+    return p.random(2*x) - x;
 }
